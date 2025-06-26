@@ -23,7 +23,7 @@ $$
 $$
 
 $$
-x = r \cos(\varphi)
+x = r . \cos(\varphi)
 $$
 
 Et de même pour le sinus de *φ* :
@@ -33,7 +33,7 @@ $$
 $$
 
 $$
-y = r \sin(\varphi)
+y = r . \sin(\varphi)
 $$
 
 Pour obtenir les coordonnées polaires *(r, φ)* à partir des coordonnées cartésiennes *(x, y)*, on peut obtenir *r* par application directe du théorème de Pythagore, et *φ* grâce à la fonction arctangente :
