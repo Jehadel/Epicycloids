@@ -31,16 +31,19 @@ Et de même pour le sinus de *φ* :
 $$
 \sin(\varphi) = \frac{y}{r}
 $$
+
 $$
 y = r \sin(\varphi)
 $$
+
 Pour obtenir les coordonnées polaires *(r, φ)* à partir des coordonnées cartésiennes *(x, y)*, on peut obtenir *r* par application directe du théorème de Pythagore, et *φ* grâce à la fonction arctangente :
+
 $$
 r = \sqrt{x^2+y^2}
 $$
 
 $$
-varphi = \arctan2(y, x)
+\varphi = \arctan2(y, x)
 $$
 
 Pour un rappel de la fonction *arctan2()* vous pouvez consulter [l’annexe de cet autre atelier](https://github.com/aucoindujeu/codeclub/tree/main/pygame/boids#trouver-le-bon-angle)
@@ -77,13 +80,9 @@ Le cercle intérieur peut avoir également un rayon inférieur à celui du cercl
 
 ![Illustration rapport 30/60](./img/30-60.png)
 
-
-
 Il n‘y a pas de limite au nombre de figures que l’ont peu obtenir (rapport 25/80) :
 
 ![Illustration épicycloïde rapport 25/80](./img/25-80.png)
-
-
 
 Ces courbes ont des applications dans des domaines très différents, mécanique bien sûr (pour prévoir la trajectoire de systèmes d’engrenages ou de bras articulés par exemples), mais en optique aussi par exemple, car l’enveloppe des rayons lumineux subissant une réflexion sur une surface ou une courbe (par exemple réfléchis par le bord intérieur d’une tasse, ou le fond d’une louche bien ronde), pourra prendre la forme d’une cardioïde ou d’une néphroïde. Voir à ce sujet [cet article traitant de ce phénomène sur Wikipédia](https://fr.wikipedia.org/wiki/Caustique). Il s’agit par exemple d’un phénomène difficile à reproduire avec des méthodes comme le ray tracing, mais facile à modéliser en optique géométrique.
 
@@ -102,16 +101,20 @@ Faisons un schéma du dispositif (roue qui tourne sur une autre roue, sans gliss
 Nous cherchons une formule pour exprimer OP en fonction de *r<sub>1</sub>, r<sub>2</sub>, φ* et *θ*.
 
 Déjà nous pouvons immédiatement poser que :
+
 $$
 \overrightarrow{OP} = \overrightarrow{OC} + \overrightarrow{CP}
 $$
+
 On a tout aussi rapidement :
+
 $$
 \overrightarrow{CP} = \begin{bmatrix}
     x(\theta) = r_2 \cos \theta \\
     y(\theta) = r_2 \sin \theta
   \end{bmatrix}
 $$
+
 $$
 \overrightarrow{OC} = \begin{bmatrix}
 	x(\varphi) = (r_1+r_2) \cos \varphi \\
