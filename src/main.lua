@@ -5,29 +5,29 @@ to play with polar coordinates
 
 ]]
 
-SCREEN_W = 800
-SCREEN_H = 600
+local SCREEN_W = 800
+local SCREEN_H = 600
 
-theta = 0
-radius1 = 20
-radius2 = 40
-radius_sum = radius1 + radius2
-pace = 5
+local theta = 0
+local radius1 = 20
+local radius2 = 40
+local radius_sum = radius1 + radius2
+local pace = 5
 
 -- polar coordinate conversion
-centerX = (radius1 + radius2) * math.cos(theta) 
-centerY = (radius1 + radius2) * math.sin(theta) 
+local centerX = (radius1 + radius2) * math.cos(theta) 
+local centerY = (radius1 + radius2) * math.sin(theta) 
 
 -- epicycloid table
-epi = {
+local epi = {
   radius_sum * math.cos(theta) - radius2 * math.cos(radius_sum/radius2 * theta) + SCREEN_W/2,
   radius_sum * math.sin(theta) - radius2 * math.sin(radius_sum/radius2 * theta) + SCREEN_H/2
 }
 
 -- control states
-hide_instructions = false
-reset = false
-draw_epicycloid = true
+local hide_instructions = false
+local reset = false
+local draw_epicycloid = true
 
 
 function love.load()
