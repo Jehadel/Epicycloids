@@ -29,14 +29,20 @@ $$
 Et de même pour le sinus de *φ* :
 
 $$
-\sin(\varphi) = \frac{y}{r} \\
+\sin(\varphi) = \frac{y}{r}
+$$
+$$
 y = r \sin(\varphi)
 $$
 Pour obtenir les coordonnées polaires *(r, φ)* à partir des coordonnées cartésiennes *(x, y)*, on peut obtenir *r* par application directe du théorème de Pythagore, et *φ* grâce à la fonction arctangente :
 $$
-r = \sqrt{x^2+y^2} \\
-\varphi = \arctan2(y, x)
+r = \sqrt{x^2+y^2}
 $$
+
+$$
+varphi = \arctan2(y, x)
+$$
+
 Pour un rappel de la fonction *arctan2()* vous pouvez consulter [l’annexe de cet autre atelier](https://github.com/aucoindujeu/codeclub/tree/main/pygame/boids#trouver-le-bon-angle)
 
 ## Application : courbes dans le plan et épicycloïdes
@@ -105,12 +111,14 @@ $$
     x(\theta) = r_2 \cos \theta \\
     y(\theta) = r_2 \sin \theta
   \end{bmatrix}
-  \\
+$$
+$$
 \overrightarrow{OC} = \begin{bmatrix}
 	x(\varphi) = (r_1+r_2) \cos \varphi \\
 	y(\varphi) = (r_1+r_2) \sin \varphi
 \end{bmatrix}
 $$
+
 Il nous faudrait pouvoir exprimer *θ* en fonction de *φ*. Déjà on peut observer qu’au point de départ (choisi arbitrairement, certes, mais qui nous permet de comprendre la situation), alors que *φ* = 0, *θ = π* :
 
 ![Illustration départ épicycloïde](./img/Depart-Epicycloide.png)
