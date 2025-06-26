@@ -14,14 +14,20 @@ Ce système est intéressant lorsqu’il est plus direct d’indiquer la positio
 
 Bien sûr dans un programme nous affichons les objets à l’écran selon un système cartésien (distance en matière de largeur et de longueur de fenêtre), mais nous pouvons très bien utiliser des calculs simples dans un système polaire, puis convertir la position finale de l‘objet que nous voulons afficher dans le système cartésien. Les formules sont obtenues immédiatement de la définition des sinus et cosinus :
 
-![Illsutration de la conversion polaire - cartésien](./img/Conversion-Coordo.png)
+![Illustration de la conversion polaire - cartésien](./img/Conversion-Coordo.png)
 
 En effet, par définition, le cosinus de l’angle *φ* est égal au rapport entre *x* et *r* :
+
 $$
-\cos(\varphi) = \frac{x}{r} \\
+\cos(\varphi) = \frac{x}{r} 
+$$
+
+$$
 x = r \cos(\varphi)
 $$
+
 Et de même pour le sinus de *φ* :
+
 $$
 \sin(\varphi) = \frac{y}{r} \\
 y = r \sin(\varphi)
