@@ -17,20 +17,26 @@ Bien sûr dans un programme nous affichons les objets à l’écran selon un sys
 ![Illsutration de la conversion polaire - cartésien](./img/Conversion-Coordo.png)
 
 En effet, par définition, le cosinus de l’angle *φ* est égal au rapport entre *x* et *r* :
+
 $$
 \cos(\varphi) = \frac{x}{r} \\
 x = r \cos(\varphi)
 $$
+
 Et de même pour le sinus de *φ* :
+
 $$
 \sin(\varphi) = \frac{y}{r} \\
 y = r \sin(\varphi)
 $$
+
 Pour obtenir les coordonnées polaires *(r, φ)* à partir des coordonnées cartésiennes *(x, y)*, on peut obtenir *r* par application directe du théorème de Pythagore, et *φ* grâce à la fonction arctangente :
+
 $$
 r = \sqrt{x^2+y^2} \\
 \varphi = \arctan2(y, x)
 $$
+
 Pour un rappel de la fonction *arctan2()* vous pouvez consulter [l’annexe de cet autre atelier](https://github.com/aucoindujeu/codeclub/tree/main/pygame/boids#trouver-le-bon-angle)
 
 ## Application : courbes dans le plan et épicycloïdes
