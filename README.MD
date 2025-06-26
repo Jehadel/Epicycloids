@@ -139,32 +139,52 @@ Il faut bien comprendre que quand la roue extérieure parcours une longueur *l* 
 On voit sur le schéma que cette distante équivalente parcouru sur le cercle extérieur sera l’arc de cercle correspondant à un angle *α*, que nous devons déterminer.
 
 Posons déjà les contraintes. Si *l<sub>r1</sub>* est l’arc de cercle parcouru sur la roue de rayon *r<sub>1</sub>* et *l<sub>r2</sub>* l’arc parcouru sur la roue extérieure, ces arcs de cercle sont définis ainsi :
+
 $$
-l_{r_1} = r_1 . \varphi \\
+l_{r_1} = r_1 . \varphi
+$$
+
+$$
 l_{r_2} = r_2. \alpha
 $$
 
+Ces longueurs doivent être identiques (roulement sans glissement) :
 
-longueurs doivent être identiques (roulement sans glissement) :
 $$
-l_{r_2} = l_{r_1} \\
-r_2 . \alpha = r_1 . \varphi \\
+l_{r_2} = l_{r_1}
+$$
+
+$$
+r_2 . \alpha = r_1 . \varphi
+$$
+
+$$
 \alpha = \frac{r_1}{r_2} \varphi
 $$
+
 D’où :
+
 $$
-\theta = \pi + \frac{r_1}{r_2} \varphi + \varphi \\
-\theta = \pi + (1 + \frac{r_1}{r_2}) \varphi \\
-\theta = \pi + \frac{r_1 + r_2}{r_2} \varphi
+\theta = \pi + \frac{r_1}{r_2} \varphi + \varphi
 $$
 
+$$
+\theta = \pi + (1 + \frac{r_1}{r_2}) \varphi
+$$
+
+$$
+\theta = \pi + \frac{r_1 + r_2}{r_2} \varphi
+$$
 
 On voit bien que si les roues ont le même rayon, alors on retrouve bien *α = φ*, si la roue extérieure est plus grand alors *α < φ* et si elle est plus petite *α > φ*.
 
 On peut donc réécrire nos formules :
-$$
-\overrightarrow{OP} = \overrightarrow{OC} + \overrightarrow{CP} \\
 
+$$
+\overrightarrow{OP} = \overrightarrow{OC} + \overrightarrow{CP}
+$$
+
+$$
 \overrightarrow{OP} = \begin{bmatrix}
     x(\theta) = r_2 \cos θ \\
     y(\theta) = r_2 \sin θ
@@ -172,13 +192,17 @@ $$
   \begin{bmatrix}
   	x(\varphi) = (r_1+r_2) \cos φ \\
 	y(\varphi) = (r_1+r_2) \sin φ
-  \end{bmatrix} \\
+  \end{bmatrix}
+$$
 
+$$
 \overrightarrow{OP} = \begin{bmatrix} 
 x(\varphi) = r_2 \cos(\pi + \frac{r_1 + r_2}{r_2} \varphi) + (r_1 + r_2) \cos \varphi \\
 y(\varphi) r_2 \sin(\pi + \frac{r_1 + r_2}{r_2} \varphi) + (r_1 + r_2) \sin \varphi
-\end{bmatrix} \\
+\end{bmatrix}
+$$
 
+$$
 \overrightarrow{OP} = \begin{bmatrix} 
 x(\varphi) = (r_1 + r_2) \cos \varphi - r_2 \cos(\frac{r_1 + r_2}{r_2} \varphi) \\
 y(\varphi) = (r_1 + r_2) \sin \varphi - r_2 \sin(\frac{r_1 + r_2}{r_2} \varphi)
